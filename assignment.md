@@ -63,6 +63,10 @@ You can't use arr.splice(), shift() or unshift() for this exercise.
     function bucketSort(arr) {
         let bucket = [];
 
+        if (arr.length < 2) {
+            return array
+        }
+
         for (let i = 0; i < arr.length; i++) {
             if (!bucket[ arr[i] ]) {
             bucket[ arr[i] ] = [ arr[i] ];
